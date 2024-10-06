@@ -5,9 +5,27 @@ body {
     color: black;
 }
 
+h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
 .container {
     margin-top: 50px;
 }
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#difficulty {
+    padding: 5px;
+    font-size: 16px;
+}
+
 
 .game-board {
     display: grid;
@@ -46,9 +64,16 @@ body {
     display: block;
 }
 
-.stats {
-    margin: 20px 0;
+.status {
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.status p {
+    margin: 0;
 }
 
 button {
@@ -57,10 +82,10 @@ button {
     border-radius: 10px;
     font-weight: 700;
     color:white;
+    margin: 0;
 }
 
 #restart {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;

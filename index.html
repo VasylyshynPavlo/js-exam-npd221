@@ -8,19 +8,28 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="stats">
+    <div class="status">
+        <h1>Гра на пам'ять</h1>
         <p id="attempts">Кількість спроб: 0</p>
         <p id="mistakes">Кількість помилок: 0</p>
         <p id="pairs">Знайдено пар: 0/12</p>
     </div>
-
-    <div class="container">
-        <h1>Гра на пам'ять</h1>
-        <div class="game-board"></div>
+    <div class="controls">
+        <div>
+            <label for="difficulty">Виберіть рівень складності:</label>
+            <select id="difficulty">
+                <option value="easy">Легкий (6 пар)</option>
+                <option value="medium">Середній (8 пар)</option>
+                <option value="hard">Важкий (12 пар)</option>
+            </select>
+        </div>
         <button id="restart">Перезапустити гру</button>
     </div>
-    <footer>
-    </footer>
+
+    <div class="container">
+        <div class="game-board"></div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
